@@ -34,8 +34,15 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/d3": "^7.4.3",
+		"@types/papaparse": "^5.3.14",
+		"d3": "^7.9.0",
 		"glob": "^11.0.0",
+		"papaparse": "^5.4.1",
+		"quill": "^2.0.2",
 		"request": "^2.88.2",
-		"rimraf": "^6.0.1"
+		"rimraf": "^6.0.1",
+		"svelte-dnd-action": "^0.9.49",
+		"svelte-quill": "^1.0.0"
 	}
 }
