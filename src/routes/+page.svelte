@@ -29,8 +29,8 @@
       submissionDate: '',
     };
   
-    function handleQuestionDrop(e: CustomEvent<{ items: any[] }>) {
-      quiz.questions = e.detail.items;
+    function handleQuestionDrop(event CustomEvent<{ items: any[] }>) {
+      quiz.questions = event.detail.items;
     }
     quiz.questions = [
 
@@ -40,7 +40,7 @@
         { id: Date.now(), text: '', options: [], score: 0, media: null }
       ];
     }
-  
+    
     function saveQuiz() {
       // Implement save functionality
       console.log('Saving quiz:', quiz);
@@ -48,9 +48,8 @@
   
     function handleBulkImport(event: CustomEvent<any[]>) {
       quiz.questions = [...quiz.questions, ...event.detail];
-    }
-  </script>
-  
+    }]
+
   <main class="container mx-auto p-4">
     <ThemeToggle bind:darkMode />
     
@@ -93,3 +92,6 @@
       @apply bg-gray-900 text-white;
     }
   </style>
+
+
+
