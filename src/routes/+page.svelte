@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { writable } from 'svelte/store';
+  import { writable } from 'svelte/store';
     import { dndzone } from 'svelte-dnd-action';
     import QuizTitle from '$lib/components/QuizTitle.svelte';
     import QuestionList from '$lib/components/QuestionList.svelte';
@@ -39,12 +39,12 @@
         ...quiz.questions,
         { id: Date.now(), text: '', options: [], score: 0, media: null }
       ];
-    }
+    },
     
     function saveQuiz() {
       // Implement save functionality
       console.log('Saving quiz:', quiz);
-    }
+    },
   
     function handleBulkImport(event: CustomEvent<any[]>) {
       quiz.questions = [...quiz.questions, ...event.detail];
@@ -71,7 +71,7 @@
     </div>
     
     <div class="mt-4">
-      <label for="submissionDate" class="block">Submission Date:</label>
+      <label for="submissionDate" class="block">Submission Date: </label>
       <input type="date" id="submissionDate" bind:value={quiz.submissionDate} class="border p-2 rounded">
     </div>
     
@@ -93,5 +93,4 @@
     }
   </style>
 
-
-
+</script>
