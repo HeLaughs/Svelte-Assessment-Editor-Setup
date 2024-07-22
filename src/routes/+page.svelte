@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { writable, Writable } from 'svelte/store';
+  import type { Writable } from 'svelte/store';
   import { dndzone } from 'svelte-dnd-action';
   import { onMount } from 'svelte';
   import QuizTitle from '$lib/components/QuizTitle.svelte';
