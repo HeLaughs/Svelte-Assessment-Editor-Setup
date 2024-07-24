@@ -17,7 +17,7 @@
                 text: option,
                 score: parseInt(row[row.length - 1]?.split(',')[index] || '0') || 0
               })),
-              score: row[row.length - 1]?.split(',').reduce((a, b) => parseInt(a) + parseInt(b), 0) || 0,
+              score: row[row.length - 1]?.split(',').reduce((acc, curr) => acc + parseInt(curr), 0) || 0,
               media: null
             }));
             dispatch('import', importedQuestions);
