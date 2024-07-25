@@ -8,7 +8,7 @@
   import BulkImport from '$lib/components/BulkImport.svelte';
   import TutorGrading from '$lib/components/TutorGrading.svelte';
   import RealtimeReport from '$lib/components/RealtimeReport.svelte';
-  
+
   type Question = {
     id: number;
     text: string;
