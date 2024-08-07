@@ -1,10 +1,11 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
 
-export default defineConfig({
+/** @type {import('vite').UserConfig} */
+const config = {
   plugins: [sveltekit()],
-  resolve: {
-    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.svelte']
+  build: {
+    sourcemap: true
   }
-}
-);
+};
+
+export default config;

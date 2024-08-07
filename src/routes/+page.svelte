@@ -47,7 +47,7 @@
   </script>
   
   <main class="container mx-auto p-4">
-    <ThemeToggle bind:darkMode={$darkMode} />
+    <ThemeToggle bind:darkMode="{$darkMode}" />
     <QuizTitle bind:title={quiz.title} />
     <BulkImport on:import={handleBulkImport} />
     <div use:dndzone={{items: quiz.questions}} on:consider={handleQuestionDrop} on:finalize={handleQuestionDrop}>

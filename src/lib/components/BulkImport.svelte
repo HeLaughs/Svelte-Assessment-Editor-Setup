@@ -18,7 +18,7 @@
                 score: parseInt(row[row.length - 1]?.split(',')[index] || '0') || 0
               })),
               score: row[row.length - 1]?.split(',').reduce((acc, curr) => acc + parseInt(curr), 0) || 0,
-              media: null
+              media: null0
             }));
             dispatch('import', importedQuestions);
           }
